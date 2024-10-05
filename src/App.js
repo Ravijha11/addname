@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Form from "./Form"; // Ensure the Form component is correctly imported
 
-function App() {
+// Define the App component
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>User Full Name Form</h1>
+      <Form /> {/* Render the Form component */}
     </div>
   );
-}
+};
 
+// Ensure you export the App component as default
 export default App;
